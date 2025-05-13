@@ -54,9 +54,11 @@
         background-color: rgba(243, 244, 246, 0.95);
       }
       .logo-img {
-        height: 72px;
-        width: auto;
+          height: 144px; /* Doble del tamaño original */
+          aspect-ratio: 4 / 2; /* Mantiene proporción cuadrada (ajústalo según tu logo) */
+          object-fit: contain; /* Asegura que la imagen no se deforme */
       }
+
       @media (min-width: 640px) {
         .logo-img {
           height: 60px;
