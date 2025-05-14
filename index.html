@@ -112,11 +112,31 @@
         border-radius: 12px; /* Redondea los bordes */
       }
 
+.fixed-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Coloca la imagen detrás del contenido */
+}
+
+.bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+  object-position: center; /* Centra la imagen */
+}
+
       
     </style>
   </head>
   <body class="text-gray-800">
-
+  <div class="fixed-background">
+    <img src="hero-bg.jpg" alt="Fondo de página" class="bg-image">
+  </div>
+    
  <header class="shadow-sm py-4 bg-white w-full">
     <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
       <!-- Logo Section -->
