@@ -18,7 +18,9 @@
       .fondo-plomo-claro {
         color: #E5E3E4 !important;
       }
-
+      .fondo_naranja {
+        background-color: #ea652b; /* Fondo naranja */
+      }
       body {
         font-family: 'Inter', sans-serif;
         background-image: url('./hero-bg.jpg');
@@ -105,8 +107,10 @@
       .hover-orange:hover {
         color: #ea652b !important;
       }
-
-
+      
+      .border-rounded {
+        border-radius: 12px; /* Redondea los bordes */
+      }
 
       
     </style>
@@ -116,7 +120,7 @@
  <header class="shadow-sm py-4 bg-white w-full">
     <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
       <!-- Logo Section -->
-      <div class="logo-container p-2 sm:p-4 flex items-center bg-[#2A6BEE]">
+      <div class="logo-container p-2 sm:p-4 flex items-center bg-[#2A6BEE] border-rounded">
         <a href="#inicio">
           <img src="logo.png" alt="AngloTalk Logo" class="logo-img shadow-box" />
         </a>
@@ -136,7 +140,7 @@
   </header>
 
     <section id="inicio" class="w-full py-12 sm:py-16 relative animate-fade-in">
-      <div class="absolute inset-0 naranja"></div>
+      <div class="absolute inset-0 fondo_naranja"></div>
       <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 relative z-10">
         <h2 class="text-2xl sm:text-4xl font-bold azul-oscuro mb-4">Mejora tu inglés con confianza</h2>
         <p class="text-base sm:text-lg azul-oscuro">Clases online personalizadas con profesores expertos.</p>
