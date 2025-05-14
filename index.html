@@ -129,14 +129,27 @@
   object-position: center; /* Centra la imagen */
 }
 
+.fixed-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('hero-bg.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f7fafc;
+  z-index: -1;
+}
       
-    </style>
+  </style>
+  
   </head>
   <body class="text-gray-800">
-  <div class="fixed-background">
-    <img src="hero-bg.jpg" alt="Fondo de página" class="bg-image">
-  </div>
-    
+
+  <div class="fixed-background"></div>
+
  <header class="shadow-sm py-4 bg-white w-full">
     <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
       <!-- Logo Section -->
