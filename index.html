@@ -329,7 +329,7 @@
 
     <script>
     document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Mantenemos esto para controlar el envío
+       // event.preventDefault(); // Mantenemos esto para controlar el envío
 
         const form = event.target;
         const formData = new FormData(form);
@@ -403,7 +403,7 @@
         // Mensaje principal al usuario
         alert('Se está abriendo WhatsApp para que puedas enviar tu mensaje principal. También hemos intentado enviar una copia por correo (revisa el estado en la página).');
         
-        form.reset(); // Resetea el formulario
+        //form.reset(); // Resetea el formulario
     });
     </script>
 
