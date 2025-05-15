@@ -1,18 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Gracias</title>
-  <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
-  <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
-  <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
-  <link rel="manifest" href="favicon/site.webmanifest">
-  <link rel="icon" type="image/png" href="favicon/android-chrome-192x192.png" sizes="192x192">
-  <link rel="icon" type="image/png" href="favicon/android-chrome-512x512.png" sizes="512x512">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="https://davidoso2022.github.io/anglotalk-landing/" />
+    <title>AngloTalk</title>
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="icon" type="image/png" href="favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="favicon/android-chrome-512x512.png" sizes="512x512">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            background-image: url('./hero-bg.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center bottom;
+        }
+        .naranja { color: #ea652b !important; }
+        .azul-oscuro { color: #1D4ED8 !important; }
+        .plomo-claro { color: #E5E3E4 !important; }
+        .fondo_azul-oscuro { background-color: #1D4ED8; }
+        .hover-orange:hover { color: #ea652b !important;
+      }
+        html {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .shadow-box {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            padding: 8px 12px;
+            border-radius: 12px;
+            background-color: #E5E3E4;
+        }
+        #inicio { background-color: rgb(59, 130, 246); }
+        header {
+            background-color: transparent;
+            position: relative;
+            z-index: 10;
+        }
+        footer {
+            background-color: rgba(31, 41, 55, 0.9);
+            margin-top: auto;
+        }
+        .logo-img {
+            width: 100%;
+            max-height: 100%;
+            aspect-ratio: 4 / 2;
+            object-fit: contain;
+        }
+        .logo-container {
+            padding: 1rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            border-radius: 12px;
+            box-sizing: border-box;
+        }
+        .text-container {
+            flex-grow: 3;
+            min-width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        @media (max-width: 639px) {
+            .logo-img {
+                height: auto;
+                max-height: 144px;
+            }
+            .logo-container {
+                padding: 0.5rem;
+            }
+            .text-container {
+                min-width: 100%;
+                flex-grow: 1;
+            }
+            .container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+        @media (min-width: 640px) and (max-width: 1023px) {
+            .logo-img {
+                height: auto;
+                max-height: 90px;
+            }
+            .logo-container {
+                padding: 1rem;
+            }
+            .text-container {
+                min-width: 70%;
+                flex-grow: 2;
+            }
+        }
+        @media (min-width: 1024px) {
+            .logo-img {
+                height: auto;
+                max-height: 80px;
+            }
+            .logo-container {
+                padding: 1rem;
+            }
+            .text-container {
+                min-width: 60%;
+                flex-grow: 3;
+            }
+        }
+        header .container {
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+        }
+        .border-rounded { border-radius: 12px; }
+        #inicio {
+            background-color: transparent;
+            padding: 12px 0;
+        }
+    </style>
 </head>
-<body>
-  <h1>¡Gracias por tu mensaje!</h1>
-  <p>Te contactaremos pronto.</p>
-  <a href="index.html">Volver al inicio</a>
+<body class="text-gray-800" >
+    <header class="shadow-sm bg-white w-full">
+        <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center gap-4">
+            <div class="logo-container">
+                <a href="#inicio">
+                    <img src="logo.png" alt="AngloTalk Logo" class="logo-img shadow-box" />
+                </a>
+            </div>
+            <div class="text-container">
+                <section id="inicio" class="w-full py-12 sm:py-16 relative animate-fade-in">
+                    <div class="absolute inset-0 fondo_azul-oscuro"></div>
+                    <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 relative z-10">
+                        <h1 class="text-2xl sm:text-4xl font-bold plomo-claro mb-4">¡Gracias por tu mensaje!</h1>
+                        <p class="text-base sm:text-lg plomo-claro mb-4">Te contactaremos pronto.</p>
+                        <p class="text-base sm:text-lg plomo-claro">
+                            <a href="index.html" class="azul-oscuro hover-orange text-sm sm:text-base shadow-box">Volver al inicio</a>
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </header>
+
+    <footer class="w-full py-4">
+        <p class="text-center text-sm sm:text-base text-white">© 2025 AngloTalk. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
